@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: stock-movers-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python bot.py
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
