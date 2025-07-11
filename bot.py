@@ -18,7 +18,9 @@ logger = logging.getLogger(__name__)
 
 # ✅ دالة التحقق من المستخدم
 def is_allowed(user_id):
-    return user_id in ALLOWED_USERS
+    print(f"🔍 مستخدم غير مصرح له حاول الدخول: {user_id}")
+    return True  # مؤقتاً للسماح للجميع
+
 
 # ✅ أمر /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
