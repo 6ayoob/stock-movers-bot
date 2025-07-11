@@ -5,7 +5,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # إعداد البوت
-TELEGRAM_BOT_TOKEN = "123456789:ABCdefGHIjklMNOpqrSTUvwxYZ12345678"
+  "123456789:ABCdefGHIjklMNOpqrSTUvwxYZ12345678"
 
 # السجل
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
@@ -29,7 +29,8 @@ async def stock(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # تشغيل البوت
 if __name__ == '__main__':
-    app = ApplicationBuilder().token(BOT_TOKEN).build()
+    app = ApplicationBuilder().token(  "123456789:ABCdefGHIjklMNOpqrSTUvwxYZ12345678"
+).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("stock", stock))
     app.run_polling()
