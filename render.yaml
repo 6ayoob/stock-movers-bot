@@ -4,8 +4,4 @@ services:
     env: python
     plan: free
     buildCommand: ""
-    startCommand: python bot.py
-    autoDeploy: true
-    envVars:
-      - key: BOT_TOKEN
-        sync: false
+    startCommand: "python stock-movers-bot.py"
