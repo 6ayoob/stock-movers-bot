@@ -7,8 +7,7 @@ import yfinance as yf
 # ✅ التوكن الخاص بك
 TELEGRAM_BOT_TOKEN = "6940662750:AAGDKoZtIA8-eTIYogEA6kp0DGt0OVp95e4"
 
-# ثم في دالة main:
-app = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
+
 
 
 # ✅ قائمة المعرفات المسموح بها
