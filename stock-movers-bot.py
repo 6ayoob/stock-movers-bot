@@ -1,14 +1,10 @@
-
 import logging
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import yfinance as yf
 
 # ✅ التوكن الخاص بك
-tayoob07_BOT = "6940662750:AAGDKoZtIA8-eTIYogEA6kp0DGt0OVp95e4"
-
-
-
+TELEGRAM_BOT_TOKEN = "6940662750:AAGDKoZtIA8-eTIYogEA6kp0DGt0OVp95e4"
 
 # ✅ قائمة المعرفات المسموح بها
 ALLOWED_USERS = [
@@ -50,11 +46,9 @@ async def stock(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except Exception as e:
         await update.message.reply_text(f"❌ لم أتمكن من جلب بيانات {symbol}.\n{e}")
 
-# ✅ إنشاء البوت
+# ✅ تشغيل البوت
 def main():
-    
-app = ApplicationBuilder().token(tayoob07_BOT).build()
-
+    app = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("stock", stock))
