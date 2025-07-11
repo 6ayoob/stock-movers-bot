@@ -7,8 +7,6 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 # إعداد البوت
 TELEGRAM_BOT_TOKEN = "6940662750:AAGDKoZtIA8-eTIYogEA6kp0DGt0OVp95e4"
 
-# ثم في دالة main:
-app = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
 
 
 
@@ -34,8 +32,9 @@ async def stock(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # تشغيل البوت
 if __name__ == '__main__':
-    app = ApplicationBuilder().token(tayoob07_BOT_TOKEN = "123456789:ABCdefGHIjklMNOpqrSTUvwxYZ12345678"
-).build()
+ 
+app = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
+
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("stock", stock))
     app.run_polling()
