@@ -5,7 +5,11 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # إعداد البوت
-tayoob07_BOT = "123456789:ABCdefGHIjklMNOpqrSTUvwxYZ12345678"
+TELEGRAM_BOT_TOKEN = "6940662750:AAGDKoZtIA8-eTIYogEA6kp0DGt0OVp95e4"
+
+# ثم في دالة main:
+app = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
+
 
 
 # السجل
