@@ -4,7 +4,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import yfinance as yf
 
 # ✅ التوكن الخاص بك
-TELEGRAM_BOT_TOKEN = "6940662750:AAGDKoZtIA8-eTIYogEA6kp0DGt0OVp95e4"
+TELEGRAM_BOT_TOKEN = "7863509137:AAEmoyimZV-XVHcA7aBT15e4IRoxB9WR0hY"
 
 # ✅ قائمة المعرفات المسموح بها
 ALLOWED_USERS = [
