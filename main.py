@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 # تحميل قائمة الأسهم من ملف
 def load_symbols():
-    with open("symbols.txt", "r") as f:
+    with open("nasdaq_symbols.txt", "r") as f:
         return [line.strip().upper() for line in f.readlines() if line.strip()]
 
 # التحقق من المستخدم
@@ -98,10 +98,5 @@ async def main():
 
     await app.run_polling()
 
-
 if __name__ == "__main__":
-    try:
-        asyncio.get_event_loop().run_until_complete(main())
-    except KeyboardInterrupt:
-        print("تم إيقاف البوت يدويًا")
-        sys.exit()
+    asyncio.run(main())
