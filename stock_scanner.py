@@ -9,7 +9,7 @@ import asyncio
 import pandas as pd
 
 # إعدادات البوت
-TELEGRAM_BOT_TOKEN = "7863509137:AAEmoyimZV-XVHcA7aBT15e4IRoxB9WR0hY"
+TELEGRAM_BOT_TOKEN = "7863509137:AAHBuRbtzMAOM_yBbVZASfx-oORubvQYxY8"
 ALLOWED_USERS = [7863509137]
 REPORT_TIME_HOUR = 15  # الساعة 3 مساءً بتوقيت السعودية
 
