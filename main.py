@@ -98,5 +98,10 @@ async def main():
 
     await app.run_polling()
 
+
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.get_event_loop().run_until_complete(main())
+    except KeyboardInterrupt:
+        print("تم إيقاف البوت يدويًا")
+        sys.exit()
